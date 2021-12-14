@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 container('main') {
-                    git([url: 'git@github.com:milvus-io/milvus.git', branch: 'master'])
+                    sh 'git clone https://github.com/milvus-io/milvus.git'
                     sh "echo ${image_tag}"
                     sh 'ls -lah'
                 }
