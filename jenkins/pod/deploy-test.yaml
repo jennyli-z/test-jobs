@@ -9,6 +9,8 @@ spec:
   containers:
   - name: main
     image: milvusdb/pytest:20211209-cef343f
+        securityContext:
+      privileged: true
     resources:
       limits:
         cpu: "6"
