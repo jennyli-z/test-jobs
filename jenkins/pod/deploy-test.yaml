@@ -9,7 +9,7 @@ spec:
   containers:
   - name: main
     image: milvusdb/pytest:20211209-cef343f
-        securityContext:
+    securityContext:
       privileged: true
     resources:
       limits:
